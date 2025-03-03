@@ -2,6 +2,11 @@
 
 Este repositorio contiene scripts y configuraciones para la simulación de tráfico utilizando SUMO (Simulation of Urban MObility). A continuación se describe cada uno de los componentes y scripts incluidos en este repositorio.
 
+Este script asume que los archivos de tráfico en formato Excel se encuentran en su misma ubicación y que su nombre sigue el siguiente formato:
+
+martes_7.00_7.00.xlsx
+
+
 ## datos.sh
 
 Este script bash permite ejecutar una serie de instrucciones para procesar archivos de simulación de tráfico y ejecutar simulaciones en SUMO. Los pasos principales que realiza son:
