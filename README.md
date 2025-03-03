@@ -27,9 +27,17 @@ A continuación se presenta de manera más detallada el conjunto de scripts desa
 
 ### matriz.py
 
-Este script toma los datos de un archivo Excel en el cual la primera columna y fila contienen nombres (TAZ) y los valores entre las intersecciones representan la cantidad de vehículos circulando entre esos TAZ específicos. La estructura del documento de excel puede visualizarse en la siguiente figura.
+Este script toma los datos de un archivo Excel en el cual la primera columna y fila contienen nombres (TAZ) y los valores entre las intersecciones representan la cantidad de vehículos circulando entre esos TAZ específicos. La estructura del documento de excel puede visualizarse en la siguiente figura. 
 
 ![image](https://github.com/user-attachments/assets/f64c3f8f-eee5-43cb-8872-8f80f1690b85)
+
+## Ejecutar matriz.py
+
+Para limpiar la memoria caché en Linux, usa:
+
+```bash
+sudo sync; echo 3 > /proc/sys/vm/drop_caches
+
 
 Los parámetros de entrada para la ejecución de este script viene dado por lo siguiente:
 1. Nombre del archivo Excel.
