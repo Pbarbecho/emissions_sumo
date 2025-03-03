@@ -43,16 +43,16 @@ python3 matriz.py <archivo_excel.xlxs> <archivo_salida.od> <tiempo_inicio_simula
 Los parámetros de entrada para la ejecución de este script viene dado por lo siguiente:
 1. Nombre del archivo Excel (<archivo_excel.xlxs>).
 2. Nombre del archivo de salida en formato V (.od) (<archivo_salida.od>).
-3. Tiempo de inicio (<tiempo_inicio_simulacion>).
-4. Tiempo de final (<tiempo_final_simulacion>).
+3. Tiempo de inicio **formato 24hr**. (<tiempo_inicio_simulacion>).
+4. Tiempo de final **formato 24hr**(<tiempo_final_simulacion>).
 5. Un número adicional (factor de escalamiento).
 
-Ejemplo: Su ejecución viene dada del siguiente modo:
+**Ejemplo**: Su ejecución viene dada del siguiente modo. Ejemplo 12hr de generación de tráfico:
 
 ```bash
 python3 matriz.py ~/lunes_7.00_19.00.xlsx output_matriz.od 7 19 1
 ```
-
+Nota: Genera un solo archivo convirtiendo los datos en el excel en formato V. No toma encuenta las horas de inicio y fin. **Pendiente**: generar un file .od por cada hora, depende de la lectura del excel. 
 
 ### modificar_vtype.py
 
