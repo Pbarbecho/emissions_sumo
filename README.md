@@ -2,10 +2,6 @@
 
 Este repositorio contiene scripts y configuraciones para la simulación de tráfico utilizando SUMO (Simulation of Urban MObility). A continuación se describe cada uno de los componentes y scripts incluidos en este repositorio.
 
-Este script asume que los archivos de tráfico en formato Excel se encuentran en su misma ubicación y que su nombre sigue el siguiente formato:
-
-martes_7.00_7.00.xlsx
-
 
 ## datos.sh
 
@@ -25,6 +21,14 @@ Su ejecución viene dada del siguiente modo:
 ```bash
 ./datos.sh <día> <factor>
 ```
+
+Este script asume que los archivos de tráfico en formato Excel se encuentran en su misma ubicación y que su nombre sigue el siguiente formato:
+```bash
+martes_7.00_7.00.xlsx
+lunes_7.00_7.00.xlsx
+```
+El script filtra el día especificado en el parámetro de entrada y busca coincidencias con los nombres de archivos en formato .xlsx, teniendo en cuenta las horas indicadas en el nombre del archivo excel.
+
 
 A continuación se presenta de manera más detallada el conjunto de scripts desarollados en python, presentando como realizar la ejecución y modificaciones que se le pueden implementar.
 
