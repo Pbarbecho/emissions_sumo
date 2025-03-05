@@ -24,10 +24,10 @@ Su ejecución viene dada del siguiente modo:
 
 Este script asume que los archivos de tráfico en formato Excel se encuentran en su misma ubicación y que su nombre sigue el siguiente formato:
 ```bash
-martes_7.00_7.00.xlsx
-lunes_7.00_7.00.xlsx
+martes_7.00_10.00.xlsx
+lunes_7.00_10.00.xlsx
 ```
-El script filtra el día especificado en el parámetro de entrada y busca coincidencias con los nombres de archivos en formato .xlsx, teniendo en cuenta las horas indicadas en el nombre del archivo excel.
+El script filtra el día especificado en el parámetro de entrada y busca coincidencias con los nombres de archivos en formato .xlsx, teniendo en cuenta la diferencia de tiempo entre hora de inicio y hora final indicadas en el nombre del archivo excel. En el ejemplo de 7-10 se genera automáticamente el sumo.cfg con un tiempo de 10800s (3hr) de simulación. 
 
 
 A continuación se presenta de manera más detallada el conjunto de scripts desarollados en python, presentando como realizar la ejecución y modificaciones que se le pueden implementar.
