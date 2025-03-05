@@ -3,7 +3,7 @@
 Este repositorio contiene scripts y configuraciones para la simulación de tráfico utilizando SUMO (Simulation of Urban MObility). A continuación se describe cada uno de los componentes y scripts incluidos en este repositorio.
 
 
-## datos.sh
+## emissions.sh
 
 Este script bash permite ejecutar una serie de instrucciones para procesar archivos de simulación de tráfico y ejecutar simulaciones en SUMO. Los pasos principales que realiza son:
 
@@ -19,7 +19,7 @@ Este script bash permite ejecutar una serie de instrucciones para procesar archi
 
 Su ejecución viene dada del siguiente modo:
 ```bash
-./datos.sh <día> <factor>
+./emissions.sh <día> <factor>
 ```
 
 Este script asume que los archivos de tráfico en formato Excel se encuentran en su misma ubicación y que su nombre sigue el siguiente formato:
@@ -29,6 +29,7 @@ lunes_7.00_10.00.xlsx
 ```
 El script filtra el día especificado en el parámetro de entrada y busca coincidencias con los nombres de archivos en formato .xlsx, teniendo en cuenta la diferencia de tiempo entre hora de inicio y hora final indicadas en el nombre del archivo excel. En el ejemplo de 7-10 se genera automáticamente el sumo.cfg con un tiempo de 10800s (3hr) de simulación. 
 
+Para realizar el plot de las calles se requiere que el script de SUMO/visualization/tools/**plot_net_dump.py** se encuentre en el mismo directorio del script emissions.sh
 
 A continuación se presenta de manera más detallada el conjunto de scripts desarollados en python, presentando como realizar la ejecución y modificaciones que se le pueden implementar.
 
