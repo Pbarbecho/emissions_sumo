@@ -34,6 +34,11 @@ Para realizar el plot de las calles se requiere que el script de SUMO/visualizat
 
 A continuación se presenta de manera más detallada el conjunto de scripts desarollados en python, presentando como realizar la ejecución y modificaciones que se le pueden implementar.
 
+
+
+[Procesos del Script emissions.sh]([https://www.ejemplo.com](https://lucid.app/lucidspark/4d55310a-2b69-4934-86c6-c45e0790fee1/edit?invitationId=inv_cc1d10d6-1744-4c77-9684-47151d570e6b))
+
+
 ## Archivos Python
 
 ### matriz.py
