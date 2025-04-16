@@ -150,7 +150,8 @@ Este script genera un mapa de calor basado en las emisiones de CO2 generadas por
 
 Este script genera un gráfico de línea que incluye el conteo de vehículos del archivo original vs los vehículos simulados. Utiliza como entradas /reportes_m/summary.xml, /reportes_m/vehroute.xml outputs de SUMO y xxxx.od matrix. Se llama directamente del script emissions.py o se puede usar desde la terminal: 
 
-Su ejecución viene dada del siguiente modo:
+Ejemplo: 
+
 ```bash
-python3 genConteoVeh.py <archivo_marouter_original.rou.xml> <archivo_salida_marouter_modificado.rou.xml> <carpeta_salida_figuras_resultados_cambios>
+python3 genConteoVeh.py outputs/lunes_7.00_8.00/reportes_m/vehroute.xml outputs/lunes_7.00_8.00/outputs/lunes_7.00_8.00.od outputs/lunes_7.00_8.00/reportes_m/summary.xml outputs/lunes_7.00_8.00/reportes_m/figuras
 ```
