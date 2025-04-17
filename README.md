@@ -171,7 +171,9 @@ python3 genConteoVeh.py outputs/lunes_7.00_8.00/reportes_m/vehroute.xml outputs/
 ```
 
 La siguiente imagen muestra el resultado de genConteoVeh.py:
-![conteo_Bellavista](https://github.com/user-attachments/assets/68abceb2-f8e7-4abd-bca0-4e42106f9f7b)
+
+<img src="https://github.com/user-attachments/assets/68abceb2-f8e7-4abd-bca0-4e42106f9f7b" alt="conteo_Bellavista" width="300"/>
+
 
 
 ![comparacion_vehiculos_teleports](https://github.com/user-attachments/assets/cb9b404d-9ef7-448f-be15-121cdc22c997)
