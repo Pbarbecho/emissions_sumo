@@ -160,16 +160,8 @@ Ejemplo:
 python3 genVtypeDistribution.py outputs/lunes_7.00_8.00/marouter.rou.xml outputs/lunes_7.00_8.00/marouter_m.rou.xml outputs/lunes_7.00_8.00/reportes_m/figuras
 ```
 
-
-
-La siguiente imagen muestra el resultado.
-
-
+La siguiente imagen muestra el resultado de genVtypeDistribution.py:
 ![Distribución de Tipos de Vehículos Asignados 2903](https://github.com/user-attachments/assets/a7846c86-685d-4d19-b203-036a0faf9206)
-
-
-
-
 
 
 ### genConteoVeh.py
@@ -187,6 +179,6 @@ Ejemplo:
 python3 genConteoVeh.py outputs/lunes_7.00_8.00/reportes_m/vehroute.xml outputs/lunes_7.00_8.00/lunes_7.00_8.00.od outputs/lunes_7.00_8.00/reportes_m/summary.xml outputs/lunes_7.00_8.00/reportes_m/figuras
 ```
 
-
+La siguiente imagen muestra el resultado de genConteoVeh.py:
 ![conteo_Bellavista](https://github.com/user-attachments/assets/68abceb2-f8e7-4abd-bca0-4e42106f9f7b)
 
