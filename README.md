@@ -35,7 +35,6 @@ Para realizar el plot de las calles se requiere que el script de SUMO/visualizat
 A continuación se presenta de manera más detallada el conjunto de scripts desarollados en python, presentando como realizar la ejecución y modificaciones que se le pueden implementar.
 
 
-
 [Procesos del Script emissions][https://lucid.app/lucidspark/4d55310a-2b69-4934-86c6-c45e0790fee1/edit?invitationId=inv_cc1d10d6-1744-4c77-9684-47151d570e6b]
 
 
@@ -160,3 +159,7 @@ Ejemplo:
 ```bash
 python3 genConteoVeh.py outputs/lunes_7.00_8.00/reportes_m/vehroute.xml outputs/lunes_7.00_8.00/lunes_7.00_8.00.od outputs/lunes_7.00_8.00/reportes_m/summary.xml outputs/lunes_7.00_8.00/reportes_m/figuras
 ```
+
+
+![conteo_Bellavista](https://github.com/user-attachments/assets/68abceb2-f8e7-4abd-bca0-4e42106f9f7b)
+
