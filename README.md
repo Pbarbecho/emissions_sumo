@@ -145,9 +145,36 @@ Este script genera un mapa de calor basado en las emisiones de CO2 generadas por
 
 
 
+### genVtypeDistribution.py
+
+Este script genera el gráfico de la distribución total (todas las rutas generadas entre distritos) de los diferentes tipos de vehículos. Se ejecuta antes de la simulación; directamente extrae la dsitribución de tipos de vehículos del archivo de rutas (marouter.rou). Se ejecuta desde el emissions.sh o se puede ejecutar de la siguiente manera en la terminal: 
+
+
+
+```bash
+python3 genVtypeDistribution.py <marouter.rou.xml>  <marouter_m.rou.xml>  <summary.xml>  <path_folder_figuras/>
+```
+
+Ejemplo:
+```bash
+python3 genVtypeDistribution.py outputs/lunes_7.00_8.00/marouter.rou.xml outputs/lunes_7.00_8.00/marouter_m.rou.xml outputs/lunes_7.00_8.00/reportes_m/figuras
+```
+
+
+
+La siguiente imagen muestra el resultado.
+
+
+![Distribución de Tipos de Vehículos Asignados 2903](https://github.com/user-attachments/assets/a7846c86-685d-4d19-b203-036a0faf9206)
+
+
+
+
+
+
 ### genConteoVeh.py
 
-Este script genera un gráfico que compara el conteo de vehículos real (xls) vs los vehículos simulados. Utiliza 3 entradas: /reportes_m/summary.xml, /reportes_m/vehroute.xml outputs de SUMO y xxxx.od orgen destino file. Se ejecuta desde el script emissions.py o se puede usar desde la terminal de la siguiente manera: 
+Este script genera un gráfico que compara el conteo de vehículos real (xls) vs los vehículos simulados por cada distrito (TAZ). Utiliza 3 entradas: /reportes_m/summary.xml, /reportes_m/vehroute.xml outputs de SUMO y xxxx.od orgen destino file. Se ejecuta desde el script emissions.py o se puede usar desde la terminal de la siguiente manera: 
 
 ```bash
 python3 genConteoVeh.py <vehroute.xml>  <TAZ.od>  <summary.xml>  <figuras/>
