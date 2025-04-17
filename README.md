@@ -152,7 +152,7 @@ python3 genVtypeDistribution.py outputs/lunes_7.00_8.00/marouter.rou.xml outputs
 ```
 
 La siguiente imagen muestra el resultado de genVtypeDistribution.py:
-![Distribución de Tipos de Vehículos Asignados 2903](https://github.com/user-attachments/assets/a7846c86-685d-4d19-b203-036a0faf9206)
+<img src="https://github.com/user-attachments/assets/a7846c86-685d-4d19-b203-036a0faf9206" alt="cDistribución de Tipos de Vehículos Asignados 2903" width="500"/>
 
 
 ### genConteoVeh.py
