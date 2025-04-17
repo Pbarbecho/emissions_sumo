@@ -69,8 +69,12 @@ Nota: Genera un solo archivo convirtiendo los datos en el excel en formato V. No
 
 ### Genera Rutas con MARouter
 
+Dentro del script emissions.sh se llama a la herramienta  MARouter para generar rutas de los vehículos en formato .rou. Como archivos de entrada se requiere el archivo de distritos TAZ (districts.taz.xml), la red de carreteras (network.net.xml), y el archivo de demanda de tráfico generado con el script genMatrizOD.py. 
+
+Su ejecución viene dada del siguiente modo:
+
 ```python
-marouter -n "network.net.xml" -m "output_file" --max-alternatives 1 --vtype "car" --additional-files "districts.taz.xml" --output-file "marouter.rou.xml"
+marouter -n "network.net.xml" -m "output_matriz.od" --max-alternatives 1 --vtype "car" --additional-files "districts.taz.xml" --output-file "marouter.rou.xml"
 ```
 
 ### modificar_vtype.py
