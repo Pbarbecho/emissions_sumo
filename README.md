@@ -136,15 +136,6 @@ Su ejecución viene dada del siguiente modo:
 python3 edges.py <archivo_vehroute.xml> <archivo_matriz.od> <archivo_summary.xml> <carpeta_salida_de_resutados_graficos>
 ```
 
-### plot_net_dump.py
-
-Este script genera un mapa de calor basado en las emisiones de CO2 generadas por SUMO. Utiliza los datos de la simulación y genera gráficos de emisiones en función del mapa utilizado para las simulaciones de tráfico. Los parámetros de entrada son:
-1. Archivos a analizar.
-2. Archivos de configuración de la red.
-3. Otros parámetros de visualización.
-
-
-
 ### genVtypeDistribution.py
 
 Este script genera el gráfico de la distribución total (todas las rutas generadas entre distritos) de los diferentes tipos de vehículos. Se ejecuta antes de la simulación; directamente extrae la dsitribución de tipos de vehículos del archivo de rutas (marouter.rou). Se ejecuta desde el emissions.sh o se puede ejecutar de la siguiente manera en la terminal: 
@@ -166,7 +157,7 @@ La siguiente imagen muestra el resultado de genVtypeDistribution.py:
 
 ### genConteoVeh.py
 
-Este script genera un gráfico que compara el conteo de vehículos real (xls) vs los vehículos simulados por cada distrito (TAZ). Utiliza 3 entradas: /reportes_m/summary.xml, /reportes_m/vehroute.xml outputs de SUMO y xxxx.od orgen destino file. Se ejecuta desde el script emissions.py o se puede usar desde la terminal de la siguiente manera: 
+Este script genera un gráfico que compara el conteo de vehículos real (xls) vs los vehículos simulados por cada distrito (TAZ). Además grafica la cantidad de teleportings en la simulación. Se ejecuta una vez terminada la simulación ya que utiliza outputs de SUMO. Utiliza 3 entradas: /reportes_m/summary.xml, /reportes_m/vehroute.xml outputs de SUMO y xxxx.od orgen destino file. Se ejecuta desde el script emissions.py o se puede usar desde la terminal de la siguiente manera: 
 
 ```bash
 python3 genConteoVeh.py <vehroute.xml>  <TAZ.od>  <summary.xml>  <figuras/>
@@ -182,3 +173,13 @@ python3 genConteoVeh.py outputs/lunes_7.00_8.00/reportes_m/vehroute.xml outputs/
 La siguiente imagen muestra el resultado de genConteoVeh.py:
 ![conteo_Bellavista](https://github.com/user-attachments/assets/68abceb2-f8e7-4abd-bca0-4e42106f9f7b)
 
+
+![comparacion_vehiculos_teleports](https://github.com/user-attachments/assets/cb9b404d-9ef7-448f-be15-121cdc22c997)
+
+
+### plot_net_dump.py
+
+Este script genera un mapa de calor basado en las emisiones de CO2 generadas por SUMO. Utiliza los datos de la simulación y genera gráficos de emisiones en función del mapa utilizado para las simulaciones de tráfico. Los parámetros de entrada son:
+1. Archivos a analizar.
+2. Archivos de configuración de la red.
+3. Otros parámetros de visualización.
