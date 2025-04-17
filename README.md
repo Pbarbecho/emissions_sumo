@@ -41,20 +41,17 @@ A continuación se presenta de manera más detallada el conjunto de scripts desa
 
 ## Archivos Python
 
-### matriz.py
+### genMatrizOD.py
 
 Crea la matriz O/D de tráfico en el formato V (VISUM/VISSIM) entendible para SUMO. Este script toma los datos de un archivo excel en el cual la primera columna y fila contienen nombres (TAZ) y los valores de la tabla representan la cantidad de vehículos circulando entre esos TAZ específicos. La estructura del documento de excel puede visualizarse en la siguiente figura. 
 
-![image](https://github.com/user-attachments/assets/f64c3f8f-eee5-43cb-8872-8f80f1690b85)
-
-#### Ejecutar matriz.py
+<img src="https://github.com/user-attachments/assets/f64c3f8f-eee5-43cb-8872-8f80f1690b85" alt="trafico" width="300"/>
 
 Para ejecutar el script tenemos los siguientes parámetros:
 
 ```bash
 python3 matriz.py <archivo_excel.xlxs> <archivo_salida.od> <tiempo_inicio_simulacion> <tiempo_final_simulacion> <factor>
 ```
-
 
 Los parámetros de entrada para la ejecución de este script viene dado por lo siguiente:
 1. Nombre del archivo Excel (<archivo_excel.xlxs>).
