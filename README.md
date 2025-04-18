@@ -105,7 +105,7 @@ python3 edges.py <archivo_vehroute.xml> <archivo_matriz.od> <archivo_summary.xml
 
 ### genVtypeDistribution.py
 
-Este script genera el gráfico de la distribución total (todas las rutas generadas entre distritos) de los diferentes tipos de vehículos. Se ejecuta antes de la simulación; directamente extrae la dsitribución de tipos de vehículos del archivo de rutas (marouter.rou). Requiere del archivo VtypeDistribution.csv que contiene la distribución de los vehículos. Se ejecuta desde el emissions.sh o se puede ejecutar de la siguiente manera en la terminal: 
+Este script genera el gráfico de la distribución total (todas las rutas generadas entre distritos) de los diferentes tipos de vehículos. Se ejecuta antes de la simulación; directamente extrae la dsitribución de tipos de vehículos del archivo de rutas (marouter.rou). Requiere del archivo VtypeDistribution.csv que contiene la distribución de los vehículos y debe ser consistente con los tipos de vehículos declarados en el vtypes.add.xml. Se ejecuta desde el emissions.sh o se puede ejecutar de la siguiente manera en la terminal: 
 
 
 ```bash
