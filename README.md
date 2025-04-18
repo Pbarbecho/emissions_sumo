@@ -190,7 +190,10 @@ Los teleportings se muestran en la siguiente figura:
 
 ### plot_net_dump.py
 
-Este script genera un mapa de calor basado en las emisiones de CO2 generadas por SUMO. Utiliza los datos de la simulación y genera gráficos de emisiones en función del mapa utilizado para las simulaciones de tráfico. Los parámetros de entrada son:
-1. Archivos a analizar.
-2. Archivos de configuración de la red.
-3. Otros parámetros de visualización.
+Esta es una herramienta visual de SUMO que genera un mapa de calor basado en las emisiones de CO2 generadas por SUMO. Utiliza los datos de la simulación y genera gráficos de emisiones en función del mapa utilizado para las simulaciones de tráfico. Se ejecuta luego de la simulación directo desde el emissions.sh. Los archivos de entrada son edgeData.xml output de SUMO, el archivo de red de carreteras (network.net.xml) y el nombre del plot de salida. 
+
+Se ejecuta desde el script emissions.py o se puede usar desde la terminal de la siguiente manera: 
+
+```bash
+python3 genConteoVeh.py outputs/lunes_7.00_8.00/reportes_m/vehroute.xml outputs/lunes_7.00_8.00/lunes_7.00_8.00.od outputs/lunes_7.00_8.00/reportes_m/summary.xml outputs/lunes_7.00_8.00/reportes_m/figuras
+```
