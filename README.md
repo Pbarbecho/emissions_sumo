@@ -136,6 +136,16 @@ La siguiente imagen muestra el resultado de genVtypeDistribution.py:
 <img src="https://github.com/user-attachments/assets/a7846c86-685d-4d19-b203-036a0faf9206" alt="cDistribución de Tipos de Vehículos Asignados 2903" width="500"/>
 
 
+
+### genHBFAv4.py
+
+Este script asigna aleatoriamente un modelo de emisiones del [Handbook de Emisiones][ https://sumo.dlr.de/docs/Models/Emissions/HBEFA4-based.html] disponible en SUMO. 
+
+
+
+
+
+
 ### genConteoVeh.py
 
 Este script genera un gráfico que compara el conteo de vehículos real (xls) vs los vehículos simulados por cada distrito (TAZ). Además grafica la cantidad de teleportings en la simulación. Se ejecuta una vez terminada la simulación ya que utiliza outputs de SUMO. Utiliza 3 entradas: /reportes_m/summary.xml, /reportes_m/vehroute.xml outputs de SUMO y xxxx.od orgen destino file. Se ejecuta desde el script emissions.py o se puede usar desde la terminal de la siguiente manera: 
