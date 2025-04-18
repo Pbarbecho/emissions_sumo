@@ -84,7 +84,9 @@ Este script modifica el archivo de rutas generado para incluir diferentes tipos 
 2. El nombre del archivo de salida modificado.
 3. La carpeta de destino para los gráficos.
 
-Los parámetros que define el tipo de vehículo que se encontrará en la simulación viene dado en el diccionario percentages, en este se encuentra el nombre del tipo de vehículo, junto con el valor del porcentaje bajo el cual serán actualizados los datos en el archivo marouter_modificado.rou.xml de análisis.
+Los parámetros que define el tipo de vehículo que se encontrará en la simulación viene dado en el diccionario percentages, en este se encuentra el nombre del tipo de vehículo, junto con el valor del porcentaje bajo el cual serán actualizados los datos en el archivo marouter_m.rou.xml de análisis. 
+
+**Pendiente, leer porcentajes de un archivo externo y actualizar el script. Por ahora los porcentajes de cada vtype se codifica en el script.** 
 
 ```python
 # Definir los porcentajes para cada tipo de vehículo
