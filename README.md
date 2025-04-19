@@ -175,6 +175,14 @@ Los teleportings se muestran en la siguiente figura:
 <img src="https://github.com/user-attachments/assets/cb9b404d-9ef7-448f-be15-121cdc22c997" alt="comparacion_vehiculos_teleports" width="500"/>
 
 
+### getMaxCO2 
+
+Este script obtiene el valor máximo de CO2_abs en un edge del archivo edgeData.xml de la simulación para ajustar el valor máximo del plot del mapa plot_net_dump.py.   
+
+```bash
+python3 getMaxCO2.py "output/reportes_m/edgeData.xml"
+```
+
 ### plot_net_dump.py
 
 Esta es una herramienta visual de SUMO que genera un mapa de calor basado en las emisiones de CO2 generadas por SUMO. Utiliza los datos de la simulación y genera gráficos de emisiones en función del mapa utilizado para las simulaciones de tráfico. Se ejecuta luego de la simulación directo desde el emissions.sh. Los archivos de entrada son edgeData.xml output de SUMO, el archivo de red de carreteras (network.net.xml) y el nombre del plot de salida. 
@@ -184,3 +192,5 @@ Se ejecuta desde el script emissions.py o se puede usar desde la terminal de la 
 ```bash
 python3 genConteoVeh.py outputs/lunes_7.00_8.00/reportes_m/vehroute.xml outputs/lunes_7.00_8.00/lunes_7.00_8.00.od outputs/lunes_7.00_8.00/reportes_m/summary.xml outputs/lunes_7.00_8.00/reportes_m/figuras
 ```
+
+
