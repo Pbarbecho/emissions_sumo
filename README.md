@@ -78,7 +78,7 @@ marouter -n "network.net.xml" -m "output_matriz.od" --max-alternatives 1 --vtype
 ```
 
 
-### generate_sumocfg.py
+### genSumocfg.py
 
 Este script genera archivos de configuración para SUMO, utilizando varios archivos de entrada y parámetros. Los parámetros de entrada son:
 1. El archivo de rutas.
@@ -90,17 +90,6 @@ Este script genera archivos de configuración para SUMO, utilizando varios archi
 Su ejecución viene dada del siguiente modo:
 ```bash
 python3 generate_sumocfg.py <archivo_marouter.rou.xml> <archivos_adicionales> <archivo_sumocfg> <archivo_entrada_edgeData.xml> <archivo_salida_edgeData.xml> <tiempo_inicio_simulacion> <tiempo_final_simulacion>
-```
-
-### edges.py
-
-Este script genera gráficos basados en los datos obtenidos de la simulación. Analiza los archivos generados por la simulación para contar la cantidad de vehículos entre diferentes TAZ y genera gráficos que se guardan en una carpeta específica. Los parámetros de entrada son:
-1. Los archivos a analizar.
-2. La carpeta de destino para los gráficos.
-
-Su ejecución viene dada del siguiente modo:
-```bash
-python3 edges.py <archivo_vehroute.xml> <archivo_matriz.od> <archivo_summary.xml> <carpeta_salida_de_resutados_graficos>
 ```
 
 ### genVtypeDistribution.py
