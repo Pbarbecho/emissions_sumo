@@ -139,10 +139,14 @@ La siguiente imagen muestra el resultado de genVtypeDistribution.py:
 
 ### genHBFAv4.py
 
-Este script asigna aleatoriamente un modelo de emisiones del [Handbook de Emisiones][ https://sumo.dlr.de/docs/Models/Emissions/HBEFA4-based.html] disponible en SUMO. 
+Este script asigna aleatoriamente un modelo de emisiones del [Handbook de Emisiones][ https://sumo.dlr.de/docs/Models/Emissions/HBEFA4-based.html] disponible en SUMO. Se utiliza los modelos HBEFA4:
+
+['HBEFA4/PC_petrol_Euro-1', 'HBEFA4/PC_petrol_Euro-2', 'HBEFA4/PC_petrol_Euro-3', 'HBEFA4/PC_petrol_Euro-4', 'HBEFA4/PC_petrol_Euro-5', 'HBEFA4/PC_petrol_Euro-6ab', 'HBEFA4/PC_petrol_Euro-7']
 
 
-
+```bash
+python3 genHBFAv4.py <original_vtypes_add> <new_vtypes_add>
+```
 
 
 
