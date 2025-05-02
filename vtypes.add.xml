@@ -1,50 +1,45 @@
-<routes>
+<additional>
+    
+    <!-- Chevrolet -->
+    <vType id="chevrolet_aveo" accel="2.8" decel="4.5" sigma="0.5" length="4.3" minGap="2.5" carFollowModel="Krauss" vClass="evehicle"   mass="1160" personCapacity="5" maxSpeed="55.55" color="#FB0101"/>
+    <vType id="chevrolet_spark" accel="2.9" decel="4.5" sigma="0.5" length="3.6" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/hatchback"  mass="840" personCapacity="4" maxSpeed="55.55" color="#00FF00"/>
+    <vType id="chevrolet_vitara" accel="2.8" decel="4.5" sigma="0.5" length="4.2" minGap="2.5" carFollowModel="Krauss" vClass="evehicle"  mass="1300" personCapacity="5" maxSpeed="55.55" color="#0000FF"/>
+    <vType id="chevrolet_sail" accel="2.7" decel="4.5" sigma="0.5" length="4.3" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/sedan"  mass="1090" personCapacity="5" maxSpeed="55.55" color="#FFFF00"/>
+    <vType id="chevrolet_dmax" accel="2.6" decel="4.5" sigma="0.5" length="5.3" minGap="2.5" carFollowModel="Krauss" vClass="evehicle"  mass="1760" personCapacity="5" maxSpeed="55.55" color="#FF00FF"/>
 
-    <vTypeDistribution id="typedist1">
-		<vType id="Chevrolet_-1000cc" accel="0.645161290322581" decel="2.1326164874552" emergencyDecel="4.26523297491039" length="3.495" maxSpeed="43.0555555555556" width="1.495" height="1.5" probability="0.0162854613388376" color="0,0,255"/>
-		<vType id="Chevrolet_1000-1600cc" accel="1.48014723157647" decel="3.16587046753857" emergencyDecel="6.33174093507714" length="4.235" maxSpeed="52.5" width="1.67" height="1.495" probability="0.0787258360485693" color="0,0,255"/>
-		<vType id="Chevrolet_1600-2000cc" accel="3.359375" decel="4.10590277777778" emergencyDecel="8.21180555555556" length="4.51" maxSpeed="59.7222222222222" width="1.73" height="1.45" probability="0.244703426140746" color="0,0,255"/>
-		<vType id="Chevrolet_2000cc+" accel="1.52264030612245" decel="3.21446286848073" emergencyDecel="6.42892573696145" length="4.98" maxSpeed="53.0555555555556" width="1.69" height="1.63" probability="0.110396268511038" color="0,0,255"/>
-		<vType id="Hyundai_-1000cc" accel="0.622779702644621" decel="1.98943516122587" emergencyDecel="3.97887032245174" length="3.61" maxSpeed="39.4444444444444" width="1.465" height="1.56" probability="0.00247231157709077" color="0,255,0"/>
-		<vType id="Hyundai_1000-1600cc" accel="1.38787436084733" decel="2.89140491843195" emergencyDecel="5.78280983686389" length="3.67" maxSpeed="47.5" width="1.68" height="1.52" probability="0.0100425679565547" color="0,255,0"/>
-		<vType id="Hyundai_1600-2000cc" accel="1.82622068435217" decel="3.34807125464565" emergencyDecel="6.6961425092913" length="4.28" maxSpeed="52.7777777777778" width="1.695" height="1.47" probability="0.0692438893645654" color="0,255,0"/>
-		<vType id="Hyundai_2000cc+" accel="2.42202268431002" decel="3.76759084226003" emergencyDecel="7.53518168452006" length="4.785" maxSpeed="56.9444444444444" width="1.9" height="1.71" probability="0.059067164965843" color="0,255,0"/>
-		<vType id="Toyota_-1000cc" accel="0.547845142439737" decel="1.70440710981252" emergencyDecel="3.40881421962503" length="3.695" maxSpeed="33.3333333333333" width="1.46" height="1.409" probability="0.00538529581486245" color="0,255,255"/>
-		<vType id="Toyota_1000-1600cc" accel="1.44628099173554" decel="2.97291092745638" emergencyDecel="5.94582185491276" length="4.425" maxSpeed="48.6111111111111" width="1.73" height="1.475" probability="0.0144118948497387" color="0,255,255"/>
-		<vType id="Toyota_1600-2000cc" accel="1.87427912341407" decel="3.4361783929258" emergencyDecel="6.8723567858516" length="4.37" maxSpeed="54.1666666666667" width="1.79" height="1.435" probability="0.0511123983567194" color="0,255,255"/>
-		<vType id="Toyota_2000cc+" accel="1.71551808646211" decel="3.0974632116677" emergencyDecel="6.1949264233354" length="5.335" maxSpeed="48.6111111111111" width="1.815" height="1.815" probability="0.0201421562328129" color="0,255,255"/>
-		<vType id="Suzuki_-1000cc" accel="0.57355326134251" decel="1.95964030958691" emergencyDecel="3.91928061917382" length="3.67" maxSpeed="40.2777777777778" width="1.54" height="1.35" probability="0.00333246976672826" color="255,0,0"/>
-		<vType id="Suzuki_1000-1600cc" accel="1.19073708817299" decel="2.67915844838922" emergencyDecel="5.35831689677844" length="3.67" maxSpeed="45.2777777777778" width="1.54" height="1.35" probability="0.0181179103409479" color="255,0,0"/>
-		<vType id="Suzuki_1600-2000cc" accel="0.649238227146814" decel="2.09198984302862" emergencyDecel="4.18397968605725" length="4.3" maxSpeed="41.6666666666667" width="1.81" height="1.695" probability="0.022254769361714" color="255,0,0"/>
-		<vType id="Suzuki_2000cc+" accel="1.98745881602721" decel="3.36763854937944" emergencyDecel="6.73527709875887" length="4.47" maxSpeed="51.9444444444444" width="1.81" height="1.7" probability="0.026927887885172" color="255,0,0"/>
-		<vType id="Mazda_-1000cc" accel="0.644115129949101" decel="2.02180582456246" emergencyDecel="4.04361164912491" length="3.855" maxSpeed="39.7222222222222" width="1.54" height="1.385" probability="0.00266542683182894" color="255,0,255"/>
-		<vType id="Mazda_1000-1600cc" accel="1.3525564803805" decel="3.00568106751222" emergencyDecel="6.01136213502444" length="4.365" maxSpeed="50.5555555555556" width="1.705" height="1.41" probability="0.00634716749162144" color="255,0,255"/>
-		<vType id="Mazda_1600-2000cc" accel="0.486052409129332" decel="1.97121254813563" emergencyDecel="3.94242509627125" length="4.51" maxSpeed="44.7222222222222" width="1.66" height="1.56" probability="0.0315632558646794" color="255,0,255"/>
-		<vType id="Mazda_2000cc+" accel="1.0112" decel="2.49991111111111" emergencyDecel="4.99982222222222" length="5.373" maxSpeed="43.8888888888889" width="1.85" height="1.837" probability="0.015628222071515" color="255,0,255"/>
-		<vType id="Nissan_-1000cc" accel="0.69415521310565" decel="2.14031190707576" emergencyDecel="4.28062381415151" length="3.746" maxSpeed="41.6666666666667" width="1.595" height="1.44" probability="0.00538317794181583" color="255,255,0"/>
-		<vType id="Nissan_1000-1600cc" accel="0.533455265965554" decel="1.86709343087944" emergencyDecel="3.73418686175888" length="3.96" maxSpeed="38.8888888888889" width="1.62" height="1.36" probability="0.0116667450767468" color="255,255,0"/>
-		<vType id="Nissan_1600-2000cc" accel="1.44098989740778" decel="3.08211728056665" emergencyDecel="6.1642345611333" length="4.625" maxSpeed="51.1111111111111" width="1.76" height="1.496" probability="0.0201150777185289" color="255,255,0"/>
-		<vType id="Nissan_2000cc+" accel="1.56064209274673" decel="3.46809353943718" emergencyDecel="6.93618707887436" length="4.77" maxSpeed="58.3333333333333" width="1.88" height="1.705" probability="0.0160729049579483" color="255,255,0"/>
-		<vType id="Kia_-1000cc" accel="1.69667263644076" decel="3.15769629559808" emergencyDecel="6.31539259119615" length="3.595" maxSpeed="50" width="1.595" height="1.485" probability="0.000556574122577266" color="255,255,255"/>
-		<vType id="Kia_1000-1600cc" accel="1.82622068435217" decel="3.34807125464565" emergencyDecel="6.6961425092913" length="4.07" maxSpeed="52.7777777777778" width="1.725" height="1.45" probability="0.00118991708964795" color="255,255,255"/>
-		<vType id="Kia_1600-2000cc" accel="1.71552455462343" decel="3.19278180999361" emergencyDecel="6.38556361998722" length="4.515" maxSpeed="50.5555555555556" width="1.865" height="1.65" probability="0.0175800653889923" color="255,255,255"/>
-		<vType id="Kia_2000cc+" accel="2.38271604938272" decel="3.57407407407407" emergencyDecel="7.14814814814815" length="4.8" maxSpeed="53.6111111111111" width="1.89" height="1.69" probability="0.0268690955726956" color="255,255,255"/>
-		<vType id="Mitsubishi_-1000cc" accel="0.918912898195589" decel="2.50148511175466" emergencyDecel="5.00297022350932" length="3.87" maxSpeed="45.8333333333333" width="1.695" height="1.55" probability="0.00187756340876401" color="255,0,127"/>
-		<vType id="Mitsubishi_1000-1600cc" accel="1.81213017751479" decel="3.42291255752794" emergencyDecel="6.84582511505588" length="4.29" maxSpeed="54.4444444444444" width="1.69" height="1.395" probability="0.010211645886441" color="255,0,127"/>
-		<vType id="Mitsubishi_1600-2000cc" accel="1.54195011337868" decel="2.95540438397581" emergencyDecel="5.91080876795163" length="4.695" maxSpeed="47.2222222222222" width="1.81" height="1.68" probability="0.0162083535083097" color="255,0,127"/>
-		<vType id="Mitsubishi_2000cc+" accel="0.539113622843546" decel="1.91684843677705" emergencyDecel="3.8336968735541" length="4.61" maxSpeed="40.2777777777778" width="1.775" height="1.735" probability="0.004655590901323" color="255,0,127"/>
-		<vType id="Ford_-1000cc" accel="1.14349923987045" decel="2.76345649635358" emergencyDecel="5.52691299270716" length="4.157" maxSpeed="48.0555555555556" width="1.764" height="1.741" probability="0.000999272123236686" color="255,127,0"/>
-		<vType id="Ford_1000-1600cc" accel="6.38888888888889" decel="4.25925925925926" emergencyDecel="8.51851851851852" length="5.062" maxSpeed="63.8888888888889" width="2.004" height="1.783" probability="0.00516931156058978" color="255,127,0"/>
-		<vType id="Ford_1600-2000cc" accel="1.17478314322792" decel="2.77379353262148" emergencyDecel="5.54758706524296" length="4.017" maxSpeed="47.7777777777778" width="1.65" height="1.765" probability="0.0146239631881369" color="255,127,0"/>
-		<vType id="Ford_2000cc+" accel="3.37577160493827" decel="3.37577160493827" emergencyDecel="6.75154320987654" length="5.885" maxSpeed="48.6111111111111" width="1.775" height="1.735" probability="0.0112994617012148" color="255,127,0"/>
-		<vType id="Volkswagen_-1000cc" accel="1.99979593918988" decel="3.49964289358229" emergencyDecel="6.99928578716457" length="4.258" maxSpeed="54.4444444444444" width="1.79" height="1.492" probability="0.00095806254074235" color="255,127,127"/>
-		<vType id="Volkswagen_1000-1600cc" accel="0.900277008310249" decel="1.95060018467221" emergencyDecel="3.90120036934441" length="4.07" maxSpeed="32.5" width="1.54" height="1.5" probability="0.00275922011733797" color="255,127,127"/>
-		<vType id="Volkswagen_1600-2000cc" accel="2.98961937716263" decel="4.06920415224914" emergencyDecel="8.13840830449827" length="4.017" maxSpeed="60" width="1.65" height="1.765" probability="0.00848843411097723" color="255,127,127"/>
-		<vType id="Volkswagen_2000cc+" accel="1.61157024793388" decel="3.31267217630854" emergencyDecel="6.62534435261708" length="4.659" maxSpeed="54.1666666666667" width="1.778" height="1.482" probability="0.00264425261244889" color="255,127,127"/>
-		<vType id="Renault_-1000cc" accel="1.11045012889153" decel="2.68358781148787" emergencyDecel="5.36717562297574" length="3.433" maxSpeed="46.6666666666667" width="1.63" height="1.423" probability="0.000133955909369259" color="127,0,255"/>
-		<vType id="Renault_1000-1600cc" accel="1.16805555555556" decel="2.72546296296296" emergencyDecel="5.45092592592593" length="4.07" maxSpeed="46.7222222222222" width="1.727" height="1.53" probability="0.000401867728107777" color="127,0,255"/>
-		<vType id="Renault_1600-2000cc" accel="0.994968624568941" decel="2.68088768286631" emergencyDecel="5.36177536573263" length="4.341" maxSpeed="48.8888888888889" width="1.832" height="1.693" probability="0.00681261481935089" color="127,0,255"/>
-		<vType id="Renault_2000cc+" accel="2.28610230873698" decel="3.68316483074292" emergencyDecel="7.36632966148584" length="4.129" maxSpeed="56.1111111111111" width="1.699" height="1.42" probability="0.00449709124311084" color="127,0,255"/>
-    </vTypeDistribution>
+    <!-- Toyota -->
+    <vType id="toyota_yaris" accel="2.7" decel="4.5" sigma="0.5" length="4.1" minGap="2.5" carFollowModel="Krauss" vClass="evehicle"  mass="1050" personCapacity="5" maxSpeed="55.55" color="#00FFFF"/>
+    <vType id="toyota_corolla" accel="2.6" decel="4.4" sigma="0.5" length="4.6" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/sedan"  mass="1400" personCapacity="5" maxSpeed="55.55" color="#800080"/>
+    <vType id="toyota_fortuner" accel="2.6" decel="4.5" sigma="0.5" length="4.8" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/wagon"  mass="1750" personCapacity="7" maxSpeed="55.55" color="#FFA500"/>
 
-</routes>
+    <!-- Mitsubishi -->
+    <vType id="mitsubishi_asx" accel="2.8" decel="4.5" sigma="0.5" length="4.3" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/wagon"  mass="1360" personCapacity="5" maxSpeed="55.55" color="#FFC0CB"/>
+    <vType id="mitsubishi_lancer" accel="2.8" decel="4.5" sigma="0.5" length="4.5" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/sedan"  mass="1380" personCapacity="5" maxSpeed="55.55" color="#A52A2A"/>
+    <vType id="mitsubishi_l200" accel="2.7" decel="4.5" sigma="0.5" length="5.2" minGap="2.5" carFollowModel="Krauss" vClass="evehicle"  mass="1900" personCapacity="5" maxSpeed="55.55" color="#008080"/>
+    <vType id="mitsubishi_montero" accel="2.6" decel="4.5" sigma="0.5" length="4.9" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/wagon"  mass="2020" personCapacity="7" maxSpeed="55.55" color="#FFD700"/>
+
+    <!-- Kia -->
+    <vType id="kia_rio" accel="2.7" decel="4.5" sigma="0.5" length="4.1" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/sedan"  mass="1120" personCapacity="5" maxSpeed="55.55" color="#FF4500"/>
+    <vType id="kia_sportage" accel="2.8" decel="4.5" sigma="0.5" length="4.4" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/wagon"  mass="1410" personCapacity="5" maxSpeed="55.55" color="#2E8B57"/>
+    <vType id="kia_picanto" accel="2.9" decel="4.5" sigma="0.5" length="3.6" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/sedan"  mass="880" personCapacity="4" maxSpeed="55.55" color="#1E90FF"/>
+
+    <!-- Hyundai -->
+    <vType id="hyundai_tucson" accel="2.8" decel="4.5" sigma="0.5" length="4.4" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/wagon"  mass="1450" personCapacity="5" maxSpeed="55.55" color="#DA70D6"/>
+    <vType id="hyundai_creta" accel="2.8" decel="4.5" sigma="0.5" length="4.3" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/sedan"  mass="1420" personCapacity="5" maxSpeed="55.55" color="#B0E0E6"/>
+    <vType id="hyundai_grand_i10" accel="2.9" decel="4.5" sigma="0.5" length="3.7" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/hatchback"  mass="920" personCapacity="4" maxSpeed="55.55" color="#FF6347"/>
+    <vType id="hyundai_hilux" accel="2.7" decel="4.5" sigma="0.5" length="5.3" minGap="2.5" carFollowModel="Krauss" vClass="evehicle"  mass="1980" personCapacity="5" maxSpeed="55.55" color="#4682B4"/>
+
+    <!-- Nissan -->
+    <vType id="nissan_sentra" accel="2.6" decel="4.5" sigma="0.5" length="4.6" minGap="2.5" carFollowModel="Krauss" vClass="evehicle"  mass="1230" personCapacity="5" maxSpeed="55.55" color="#800000"/>
+
+    <!-- Mazda -->
+    <vType id="mazda_3" accel="2.9" decel="4.5" sigma="0.5" length="4.5" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/sedan"  mass="1350" personCapacity="5" maxSpeed="55.55" color="#808000"/>
+    <vType id="mazda_bt50" accel="2.7" decel="4.5" sigma="0.5" length="5.2" minGap="2.5" carFollowModel="Krauss" vClass="evehicle"  mass="1800" personCapacity="5" maxSpeed="55.55" color="#708090"/>
+
+    <!-- Volkswagen -->
+    <vType id="volkswagen_gol" accel="2.8" decel="4.6" sigma="0.5" length="4.0" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/hatchback"  mass="1070" personCapacity="5" maxSpeed="55.55" color="#D2691E"/>
+
+    <!-- Suzuki -->
+    <vType id="suzuki_grand_vitara" accel="2.5" decel="4.4" sigma="0.5" length="4.5" minGap="2.5" carFollowModel="Krauss" vClass="evehicle" guiShape="passenger/wagon"  mass="1350" personCapacity="5" maxSpeed="55.55" color="#8B4513"/>
+	
+</additional>
