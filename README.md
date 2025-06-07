@@ -181,5 +181,13 @@ Se ejecuta desde el script emissions.py o se puede usar desde la terminal de la 
 ```bash
 python3 genConteoVeh.py outputs/lunes_7.00_8.00/reportes_m/vehroute.xml outputs/lunes_7.00_8.00/lunes_7.00_8.00.od outputs/lunes_7.00_8.00/reportes_m/summary.xml outputs/lunes_7.00_8.00/reportes_m/figuras
 ```
+### nuevas_emisiones.py
 
+Este scripr calcula las emisiones en base a un archivo Excel CSV[factores], donde se especifican los índices, así como la correspondencia de los vehiculos con su información.
+Se debe cargar el archivo de salida de la simulación en SUMO fcd. y especificar el nombre del nuevo archivo que contendrá los nuevos cálculos.
+
+```bash
+python3 nuevas_emisiones.py fcd.xml nuevo_fcd.xml
+```
+ 
 
