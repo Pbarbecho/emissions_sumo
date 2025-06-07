@@ -1,3 +1,4 @@
+import sys
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 import pandas as pd
@@ -130,7 +131,7 @@ def procesar_fcd(fcd_file, salida_file):
     nuevo_arbol.write(salida_file, encoding="utf-8", xml_declaration=True)
 
 
-fcd_input = "fcd_1.xml"                  # Archivo de entrada FCD
-salida_output = "nuevas_emisiones.xml" # Archivo de salida
+fcd_input = sys.argv[1] #"fcd_1.xml"                  # Archivo de entrada FCD
+salida_output = sys.argv[2] #"nuevas_emisiones.xml" # Archivo de salida
 
 procesar_fcd(fcd_input, salida_output)
