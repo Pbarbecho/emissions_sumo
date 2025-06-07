@@ -187,7 +187,7 @@ Este scripr calcula las emisiones en base a un archivo Excel CSV[factores], dond
 Se debe cargar el archivo de salida de la simulación en SUMO fcd. y especificar el nombre del nuevo archivo que contendrá los nuevos cálculos.
 
 ```bash
-python3 nuevas_emisiones.py fcd.xml nuevo_fcd.xml
+python3 nuevas_emisiones.py fcd.xml nuevo_co.xml
 ```
  
 
